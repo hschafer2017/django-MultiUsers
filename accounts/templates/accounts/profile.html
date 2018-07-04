@@ -8,4 +8,11 @@
 <p>Email: {{ user.email }}</p>
 <p>Bio: {{ user.Profile.description }}</p>
 
+{% if user.buyer %}
+<p>You are a Buyer!</p>
+{% else %}
+<p>You are a Seller!</p>
+{% endif %}
+
+
 {% endblock content %}
